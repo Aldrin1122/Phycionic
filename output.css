@@ -863,6 +863,21 @@ body {
   padding-right: 2.5rem;
 }
 
+.px-\[6rem\] {
+  padding-left: 6rem;
+  padding-right: 6rem;
+}
+
+.px-\[5\.5rem\] {
+  padding-left: 5.5rem;
+  padding-right: 5.5rem;
+}
+
+.px-\[5\.6rem\] {
+  padding-left: 5.6rem;
+  padding-right: 5.6rem;
+}
+
 .pt-6 {
   padding-top: 1.5rem;
 }
