@@ -635,6 +635,14 @@ body {
   margin-left: .4rem;
 }
 
+.ml-\[1\.5rem\] {
+  margin-left: 1.5rem;
+}
+
+.ml-\[1\.4rem\] {
+  margin-left: 1.4rem;
+}
+
 .block {
   display: block;
 }
@@ -673,6 +681,10 @@ body {
 
 .w-full {
   width: 100%;
+}
+
+.w-\[\] {
+  width: ;
 }
 
 .cursor-pointer {
@@ -878,6 +890,46 @@ body {
   padding-bottom: 1.5rem;
 }
 
+.px-\[\] {
+  padding-left: ;
+  padding-right: ;
+}
+
+.px-\[1--\%\] {
+  padding-left: 1--%;
+  padding-right: 1--%;
+}
+
+.px-\[100\%\] {
+  padding-left: 100%;
+  padding-right: 100%;
+}
+
+.px-\[4rem\] {
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
+.px-\[5rem\] {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+.px-\[5\.3rem\] {
+  padding-left: 5.3rem;
+  padding-right: 5.3rem;
+}
+
+.px-\[auto\] {
+  padding-left: auto;
+  padding-right: auto;
+}
+
+.px-\[5\.35rem\] {
+  padding-left: 5.35rem;
+  padding-right: 5.35rem;
+}
+
 .pt-6 {
   padding-top: 1.5rem;
 }
@@ -1042,6 +1094,22 @@ body {
     margin-right: 3.5rem;
   }
 
+  .lg\:ml-\[\] {
+    margin-left: ;
+  }
+
+  .lg\:ml-\[1\] {
+    margin-left: 1;
+  }
+
+  .lg\:ml-\[0\.4rem\] {
+    margin-left: 0.4rem;
+  }
+
+  .lg\:ml-\[0\.5rem\] {
+    margin-left: 0.5rem;
+  }
+
   .lg\:block {
     display: block;
   }
@@ -1075,6 +1143,10 @@ body {
   .lg\:px-\[20\.5rem\] {
     padding-left: 20.5rem;
     padding-right: 20.5rem;
+  }
+
+  .lg\:text-left {
+    text-align: left;
   }
 }
 
