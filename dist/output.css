@@ -615,34 +615,6 @@ body {
   margin-top: 0.5rem;
 }
 
-.ml-\[\] {
-  margin-left: ;
-}
-
-.ml-\[1rem\] {
-  margin-left: 1rem;
-}
-
-.ml-\[5rem\] {
-  margin-left: 5rem;
-}
-
-.ml-\[\.5rem\] {
-  margin-left: .5rem;
-}
-
-.ml-\[\.4rem\] {
-  margin-left: .4rem;
-}
-
-.ml-\[1\.5rem\] {
-  margin-left: 1.5rem;
-}
-
-.ml-\[1\.4rem\] {
-  margin-left: 1.4rem;
-}
-
 .block {
   display: block;
 }
@@ -681,10 +653,6 @@ body {
 
 .w-full {
   width: 100%;
-}
-
-.w-\[\] {
-  width: ;
 }
 
 .cursor-pointer {
@@ -840,16 +808,6 @@ body {
   padding-right: 3rem;
 }
 
-.px-\[5\.5rem\] {
-  padding-left: 5.5rem;
-  padding-right: 5.5rem;
-}
-
-.px-\[5\.6rem\] {
-  padding-left: 5.6rem;
-  padding-right: 5.6rem;
-}
-
 .py-10 {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
@@ -888,46 +846,6 @@ body {
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
-}
-
-.px-\[\] {
-  padding-left: ;
-  padding-right: ;
-}
-
-.px-\[1--\%\] {
-  padding-left: 1--%;
-  padding-right: 1--%;
-}
-
-.px-\[100\%\] {
-  padding-left: 100%;
-  padding-right: 100%;
-}
-
-.px-\[4rem\] {
-  padding-left: 4rem;
-  padding-right: 4rem;
-}
-
-.px-\[5rem\] {
-  padding-left: 5rem;
-  padding-right: 5rem;
-}
-
-.px-\[5\.3rem\] {
-  padding-left: 5.3rem;
-  padding-right: 5.3rem;
-}
-
-.px-\[auto\] {
-  padding-left: auto;
-  padding-right: auto;
-}
-
-.px-\[5\.35rem\] {
-  padding-left: 5.35rem;
-  padding-right: 5.35rem;
 }
 
 .pt-6 {
@@ -977,6 +895,10 @@ body {
 
 .text-huge {
   font-size: clamp(3rem, 6vw, 5rem);
+}
+
+.text-huge2 {
+  font-size: clamp(2rem, 4vw, 3rem);
 }
 
 .font-bold {
@@ -1064,6 +986,31 @@ body {
   display: block;
 }
 
+.hover\:bg-white:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-blue-100:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(219 234 254 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-blue-400:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(96 165 250 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-blue-300:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(147 197 253 / var(--tw-bg-opacity));
+}
+
+.hover\:text-primary:hover {
+  --tw-text-opacity: 1;
+  color: rgb(35 166 240 / var(--tw-text-opacity));
+}
+
 @media (min-width: 768px) {
   .md\:block {
     display: block;
@@ -1092,22 +1039,6 @@ body {
   .lg\:mx-14 {
     margin-left: 3.5rem;
     margin-right: 3.5rem;
-  }
-
-  .lg\:ml-\[\] {
-    margin-left: ;
-  }
-
-  .lg\:ml-\[1\] {
-    margin-left: 1;
-  }
-
-  .lg\:ml-\[0\.4rem\] {
-    margin-left: 0.4rem;
-  }
-
-  .lg\:ml-\[0\.5rem\] {
-    margin-left: 0.5rem;
   }
 
   .lg\:block {

@@ -15,7 +15,9 @@ module.exports = {
         montserrat: ['Montserrat', 'san-serif']
       },
       fontSize: {
-        huge: 'clamp(3rem, 6vw, 5rem)'
+        huge: 'clamp(3rem, 6vw, 5rem)',
+        huge2: 'clamp(2rem, 4vw, 3rem)'
+
       }
     },
     container: {
