@@ -9,7 +9,7 @@
 }
 
 .header .toggleMenu span {
-    @apply h-[0.2rem] w-8 bg-darkgray block mb-1  ml-auto
+    @apply h-[0.2rem] w-8 bg-white block mb-1  ml-auto
 }
 
 .header .toggleMenu span:nth-child(2){

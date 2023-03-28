@@ -10,25 +10,26 @@
     <link rel="stylesheet" href="./output.css">
 </head>
 <body class="">
-    <header class="header py-5">
+    <div class="bg-blend-multiply bg-no-repeat bg-cover bg-darkgray bg-[url('https://raw.githubusercontent.com/Aldrin1122/Physionic/main/dist/img/herocover.jpg')] py-10 text-center text-white">
+      <header class="header py-5 ">
         <div class="container">
             <div class="headerWrapper flex justify-between items-center">
                 <div class="headerLogo">
-                <h2 class="text-secondary font-bold text-[2rem]">Physionic</h2>
+                <h2 class="text-white font-bold text-[2rem]">Physionic</h2>
                 </div>
                 <div class="headerNav hidden md:block">
-                    <ul class="flex gap-5">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Product</a></li>
-                        <li><a href="#">Pricing</a></li>
-                        <li><a href="#">Contact</a></li>
+                    <ul class="flex gap-5 font-semibold ">
+                        <li><a class="hover:text-primary" href="#">Home</a></li>
+                        <li><a class="hover:text-primary" href="#">Product</a></li>
+                        <li><a class="hover:text-primary" href="#">Pricing</a></li>
+                        <li><a class="hover:text-primary" href="#">Contact</a></li>
                     </ul>
                 </div>
                 <div class="getAQuote hidden md:block ">
-                    <a class="bg-primary p-3 rounded-md text-white font-semibold" href="">Get Quote Now <i class="fa-solid fa-arrow-right font-regural"></i></a>
+                    <a class="bg-primary p-3 rounded-md text-white font-semibold hover:bg-blue-300" href="">Get Quote Now <i class="fa-solid fa-arrow-right font-regural"></i></a>
                 </div>
-                <div class="flex gap-6 md:hidden">
-                    <div class="searchAndCart flex text-darkgray text-2xl gap-6">
+                <div class="flex gap-6 md:hidden items-center">
+                    <div class="searchAndCart flex text-white text-2xl gap-6">
                         <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
                         <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
                     </div>
@@ -40,21 +41,21 @@
                 </div>
             </div>
             <div class="headerMobileNav transition-all duration-500">
-                <ul class="text-center text-[1.5rem] text-darkgray font-semibold py-5">
-                    <li><a class="block p-3" href="#">Home</a></li>
-                    <li><a class="block p-3" href="#">Product</a></li>
-                    <li><a class="block p-3" href="#">Pricing</a></li>
-                    <li><a class="block p-3" href="#">Contact</a></li>
+                <ul class="text-center text-[1.5rem] text-white font-semibold py-5 md:hidden">
+                    <li><a class="block p-3 hover:text-primary " href="#">Home</a></li>
+                    <li><a class="block p-3 hover:text-primary" href="#">Product</a></li>
+                    <li><a class="block p-3hover:text-primary" href="#">Pricing</a></li>
+                    <li><a class="block p-3 hover:text-primary" href="#">Contact</a></li>
                 </ul>
             </div>
             
         </div>
     </header>
 
-    <section class="banner bg-blend-multiply bg-no-repeat bg-cover bg-darkgray bg-[url('/dist/img/herocover.jpg')] py-10 text-center text-white">
+    <section class="banner p-10 ">
         <div class="container">
             <div class="bannerWrapper md:flex">
-                <div class="lg:text-left">
+                <div class="lg:text-left lg:pt-24">
                     <h1 class="text-huge  font-bold mb-6">Meet the Best Hospital</h1>
                     <p class="text-white inline-block mb-6 w-[70%] mx-auto">We know how large objects will act, but things on a small scale.</p> <br>
                     <a class="bg-primary inline-block mb-3 px-5 py-3 rounded-full font-semibold hover:bg-blue-300" href="#">Get a Quote Now</a> <br class="xl:hidden">
@@ -62,26 +63,26 @@
                 </div>
 
                 <div class="bannerForm text-left bg-white p-10 rounded-lg w-[350px] mx-auto my-10 text-black">
-                    <h3 class="text-center">Book Appoinment</h3>
+                    <h3 class="text-center my-4">Book Appoinment</h3>
                     <form action="">
-                        <div class="inputGroup mb-3">
-                            <label for="">Name</label>
-                            <input class="p-3 w-full bg-lightgray rounded-lg border" type="text" placeholder="Fullname">
+                        <div class="inputGroup mb-4">
+                            <label for="">Name *</label>
+                            <input class="p-3 w-full bg-lightgray rounded-lg border" type="text" placeholder="Fullname *">
                         </div>  
-                        <div class="inputGroup mb-3">
-                            <label for="">email</label>
+                        <div class="inputGroup mb-4">
+                            <label for="">email *</label>
                             <input class="p-3 w-full bg-lightgray rounded-lg border" type="email" placeholder="example@email.com">
                         </div>  
-                        <div class="inputGroup mb-3">
-                            <label for="">Department</label>
+                        <div class="inputGroup mb-4">
+                            <label for="">Department *</label>
                             <select class="bg-lightgray rounded-lg  text-secondary border w-[100%] p-2" name="clienttype" id="ClientType" placeholder="select">
                                 <option class="text-gray-400" hidden value="Select"> Select</option>
                                 <option class="text-secondary" value="Option1"> Option1</option>
                                 <option class="text-secondary" value="Option2"> Option2</option>
                             </select>
                         </div>  
-                        <div class="inputGroup mb-3">
-                            <label for="">Time</label>
+                        <div class="inputGroup mb-6">
+                            <label for="">Time *</label>
                             <select class="bg-lightgray rounded-lg  text-secondary border w-[100%] p-2" name="clienttype" id="ClientType" placeholder="select">
                                 <option class="text-gray-400" hidden value="Select"> Select</option>
                                 <option class="text-secondary" value="Option1"> Option1</option>
@@ -89,12 +90,14 @@
                             </select>
                         </div>  
                     </form>
-                    
+                    <a class="bg-primary flex justify-center rounded-lg py-2 font-semibold text-white hover:bg-blue-300" href="">Book Appointment</a>
                 </div>
             </div>
             
         </div>
-    </section>
+    </section>  
+    </div>
+    
 
     <section class="medicine py-12">
         <div class="container">
@@ -116,7 +119,7 @@
                                     <p class="mb-2">- Lightning fast prototyping</p>
                                     <p class="mb-2">- Fastest way to organize </p>
                                     <p class="mb-2">- Work at the soeed of thought</p>
-                                    <a class="text-primary font-bold" href="#">Learn More</a>
+                                    <a class="text-primary font-bold hover:text-blue-300" href="#">Learn More</a>
                                 </div>
                             </div>
                            
@@ -134,7 +137,7 @@
                                     <p class="mb-2">- Lightning fast prototyping</p>
                                     <p class="mb-2">- Fastest way to organize </p>
                                     <p class="mb-2">- Work at the soeed of thought</p>
-                                    <a class="text-primary font-bold" href="#">Learn More</a>
+                                    <a class="text-primary font-bold hover:text-blue-300" href="#">Learn More</a>
                                 </div>
                             </div>
                            
@@ -152,7 +155,7 @@
                                     <p class="mb-2">- Lightning fast prototyping</p>
                                     <p class="mb-2">- Fastest way to organize </p>
                                     <p class="mb-2">- Work at the soeed of thought</p>
-                                    <a class="text-primary font-bold" href="#">Learn More</a>
+                                    <a class="text-primary font-bold hover:text-blue-300" href="#">Learn More</a>
                                 </div>
                             </div>
                            
@@ -298,7 +301,7 @@
                     <p class="px-[3rem] lg:px-[20.5rem] text-center">Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics  </p>
                 </div>
                 <div class="grid lg:grid-cols-3 lg:mx-14 ">
-                    <div class="border border-primary rounded-lg p-10 m-10 lg:mx-0 ">
+                    <div class="border border-primary rounded-lg p-9 m-10 lg:mx-0 ">
                         <h5 class="font-bold text-[22px] py-4 text-center">FREE</h5>
                         <p class="text-darkgray font-semibold text-center">Organize across all <br> apps by hand</p>
                         <div class="flex justify-center gap-3 items-center text-primary py-4">
@@ -310,27 +313,27 @@
                         </div>
                         <div class="ml-[rem]">
                             <div class="flex items-center gap-3  mb-3">
-                                <img src="./img/list-style-main.png" alt="">
+                                <i class="fa-solid fa-circle-check text-green-500 text-[2rem]"></i>
+                                <p class="font-semibold ">Unlimited product updates</p>
+                            </div>
+                            <div class="flex items-center gap-3  mb-3">
+                                <i class="fa-solid fa-circle-check text-green-500 text-[2rem]"></i>
                                 <p class="font-semibold">Unlimited product updates</p>
                             </div>
                             <div class="flex items-center gap-3  mb-3">
-                                <img src="./img/list-style-main.png" alt="">
+                                <i class="fa-solid fa-circle-check text-green-500 text-[2rem]"></i>
                                 <p class="font-semibold">Unlimited product updates</p>
                             </div>
                             <div class="flex items-center gap-3  mb-3">
-                                <img src="./img/list-style-main.png" alt="">
-                                <p class="font-semibold">Unlimited product updates</p>
-                            </div>
-                            <div class="flex items-center gap-3  mb-3">
-                                <img src="./img/list-style-gray.png" alt="">
+                                <i class="fa-solid fa-circle-check text-gray-400 text-[2rem]"></i>
                                 <p class="font-semibold">1GB Cloud storage</p>
                             </div>
                             <div class="flex items-center gap-3  mb-6">
-                                <img src="./img/list-style-gray.png" alt="">
+                                <i class="fa-solid fa-circle-check text-gray-400 text-[2rem]"></i>
                                 <p class="font-semibold">Email and community support</p>
                             </div>
                         </div>
-                        <a class="  bg-primary text-white font-semibold py-2 rounded-md flex justify-center" href="#">Try for Free</a>
+                        <a class="  bg-primary text-white font-semibold py-2 rounded-md flex justify-center hover:bg-blue-300" href="#">Try for Free</a>
                     </div>
                     <div class="bg-secondary border border-primary rounded-lg p-10 m-10 mt-2 lg:mx-0 text-white ">
                         <h5 class="font-bold text-[22px] py-4 text-center">FREE</h5>
@@ -344,27 +347,27 @@
                         </div>
                         <div class="ml-[rem]">
                             <div class="flex items-center gap-3  mb-3">
-                                <img src="./img/list-style-main.png" alt="">
+                                <i class="fa-solid fa-circle-check text-green-500 text-[2rem] bg-white rounded-full"></i>
                                 <p class="font-semibold">Unlimited product updates</p>
                             </div>
                             <div class="flex items-center gap-3  mb-3">
-                                <img src="./img/list-style-main.png" alt="">
+                                <i class="fa-solid fa-circle-check text-green-500 text-[2rem] bg-white rounded-full"></i>
                                 <p class="font-semibold">Unlimited product updates</p>
                             </div>
                             <div class="flex items-center gap-3  mb-3">
-                                <img src="./img/list-style-main.png" alt="">
+                                <i class="fa-solid fa-circle-check text-green-500 text-[2rem] bg-white rounded-full"></i>
                                 <p class="font-semibold">Unlimited product updates</p>
                             </div>
                             <div class="flex items-center gap-3  mb-3">
-                                <img src="./img/list-style-gray.png" alt="">
+                                <i class="fa-solid fa-circle-check text-gray-400 text-[2rem] bg-white rounded-full"></i>
                                 <p class="font-semibold">1GB Cloud storage</p>
                             </div>
                             <div class="flex items-center gap-3  mb-6">
-                                <img src="./img/list-style-gray.png" alt="">
+                                <i class="fa-solid fa-circle-check text-gray-400 text-[2rem] bg-white rounded-full"></i>
                                 <p class="font-semibold">Email and community support</p>
                             </div>
                         </div>
-                        <a class="  bg-primary text-white font-semibold py-2 rounded-md flex justify-center" href="#">Try for Free</a>
+                        <a class="  bg-primary text-white font-semibold py-2 rounded-md flex justify-center hover:bg-blue-300" href="#">Try for Free</a>
                     </div>
                     <div class="border border-primary rounded-lg p-10 m-10 lg:mx-0 ">
                         <h5 class="font-bold text-[22px] py-4 text-center">FREE</h5>
@@ -378,27 +381,27 @@
                         </div>
                         <div class="ml-[rem]">
                             <div class="flex items-center gap-3  mb-3">
-                                <img src="./img/list-style-main.png" alt="">
+                                <i class="fa-solid fa-circle-check text-green-500 text-[2rem]"></i>
                                 <p class="font-semibold">Unlimited product updates</p>
                             </div>
                             <div class="flex items-center gap-3  mb-3">
-                                <img src="./img/list-style-main.png" alt="">
+                                <i class="fa-solid fa-circle-check text-green-500 text-[2rem]"></i>
                                 <p class="font-semibold">Unlimited product updates</p>
                             </div>
                             <div class="flex items-center gap-3  mb-3">
-                                <img src="./img/list-style-main.png" alt="">
+                                <i class="fa-solid fa-circle-check text-green-500 text-[2rem]"></i>
                                 <p class="font-semibold">Unlimited product updates</p>
                             </div>
                             <div class="flex items-center gap-3  mb-3">
-                                <img src="./img/list-style-gray.png" alt="">
+                                 <i class="fa-solid fa-circle-check text-gray-400 text-[2rem]"></i>
                                 <p class="font-semibold">1GB Cloud storage</p>
                             </div>
                             <div class="flex items-center gap-3  mb-6">
-                                <img src="./img/list-style-gray.png" alt="">
+                                 <i class="fa-solid fa-circle-check text-gray-400 text-[2rem]"></i>
                                 <p class="font-semibold">Email and community support</p>
                             </div>
                         </div>
-                        <a class="  bg-primary text-white font-semibold py-2 rounded-md flex justify-center" href="#">Try for Free</a>
+                        <a class="  bg-primary text-white font-semibold py-2 rounded-md flex justify-center hover:bg-blue-300" href="#">Try for Free</a>
                     </div>
                 </div>
             </div>
@@ -414,7 +417,7 @@
                 </div>
                 <h3 class="text-[28px] md:hidden text-center font-bold">Subscribe For Latest Newsletter</h3>
                 <div class="pt-6 mx-10">
-                   <div class="flex w-[300px] items-center pr-[1rem] justify-center bg-primary rounded-lg">
+                   <div class="flex w-[300px] items-center pr-[1rem] justify-center bg-primary rounded-lg ">
                         <form action="">
                             <input class="p-3 w-[194px] bg-lightgray rounded-tl-lg rounded-bl-lg border" type="email" placeholder="example@email.com"> 
                         </form>
@@ -433,9 +436,9 @@
                 <p  class="mb-4 text-darkgray">The quick fox jumps over the <br> lazy dog</p>
                 <div>
                     <ul class="flex text-[20px] gap-6 text-primary">
-                        <li><a href=""></a><i class="fa-brands fa-facebook"></i></li>
-                        <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
-                        <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><a href=""></a><i class="fa-brands fa-facebook hover:text-blue-300"></i></li>
+                        <li><a href=""><i class="fa-brands fa-instagram hover:text-blue-300"></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-twitter hover:text-blue-300"></i></a></li>
                     </ul>
                 </div>
             </div>
