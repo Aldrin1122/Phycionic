@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./output.css">
 </head>
 <body class="">
-    <div class="bg-blend-multiply bg-no-repeat bg-cover bg-darkgray bg-[url('https://raw.githubusercontent.com/Aldrin1122/Physionic/main/dist/img/herocover.jpg')] py-10 text-center text-white">
+    <div class="bg-blend-multiply bg-no-repeat bg-cover bg-darkgray bg-[url('https://raw.githubusercontent.com/Aldrin1122/Physionic/main/dist/img/herocover.jpg')] py-10 text-center text-white" id="home">
       <header class="header py-5 ">
         <div class="container">
             <div class="headerWrapper flex justify-between items-center">
@@ -19,10 +19,10 @@
                 </div>
                 <div class="headerNav hidden md:block">
                     <ul class="flex gap-5 font-semibold ">
-                        <li><a class="hover:text-primary" href="#">Home</a></li>
-                        <li><a class="hover:text-primary" href="#">Product</a></li>
-                        <li><a class="hover:text-primary" href="#">Pricing</a></li>
-                        <li><a class="hover:text-primary" href="#">Contact</a></li>
+                        <li><a class="hover:text-primary" href="#home">Home</a></li>
+                        <li><a class="hover:text-primary" href="#medicine">Product</a></li>
+                        <li><a class="hover:text-primary" href="#pricing">Pricing</a></li>
+                        <li><a class="hover:text-primary" href="#Contact">Contact</a></li>
                     </ul>
                 </div>
                 <div class="getAQuote hidden md:block ">
@@ -42,10 +42,10 @@
             </div>
             <div class="headerMobileNav transition-all duration-500">
                 <ul class="text-center text-[1.5rem] text-white font-semibold py-5 md:hidden">
-                    <li><a class="block p-3 hover:text-primary " href="#">Home</a></li>
-                    <li><a class="block p-3 hover:text-primary" href="#">Product</a></li>
-                    <li><a class="block p-3hover:text-primary" href="#">Pricing</a></li>
-                    <li><a class="block p-3 hover:text-primary" href="#">Contact</a></li>
+                    <li><a class="block p-3 hover:text-primary " href="#home">Home</a></li>
+                    <li><a class="block p-3 hover:text-primary" href="#medicine">Product</a></li>
+                    <li><a class="block p-3 hover:text-primary" href="#pricing">Pricing</a></li>
+                    <li><a class="block p-3 hover:text-primary" href="#Contact">Contact</a></li>
                 </ul>
             </div>
             
@@ -99,7 +99,7 @@
     </div>
     
 
-    <section class="medicine py-12">
+    <section class="medicine py-12" id="medicine">
         <div class="container">
             <div class="medicineWrapper text-center">
                 <h2 class="text-huge2 font-bold">Leading <br class="xl:hidden"> Medicine</h2>
@@ -293,7 +293,7 @@
         </div>
     </section>
 
-    <section class="pricing bg-lightgray py-10">
+    <section class="pricing bg-lightgray py-10" id="pricing">
         <div class="container">
             <div class="pricingWrapper">
                 <div class=" py-6">
@@ -408,7 +408,7 @@
         </div>
     </section>
 
-    <section class="touch bg-secondary text-white py-14">
+    <section class="touch bg-secondary text-white py-14" id="Contact">
         <div class="container">
             <div class="md:flex justify-between mx-10">
                 <div class="hidden md:block">
@@ -487,6 +487,7 @@
             </div>
         </div>
     </section>
+    
 
     <script>
         const toggleMenu = document.querySelector('.toggleMenu');
